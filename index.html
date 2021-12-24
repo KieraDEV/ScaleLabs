@@ -1,247 +1,363 @@
-<!doctype html>
+<!doctype HTML>
 <html lang="en">
-        <head>
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="The team behind Asteria, Minestats, Destox, MiteHost, Nerux... Do we need to continue?">
-    <meta name="keywords" content="ScaleLabs,Nerux,Minestats,Asteria,MiteHost,Destox">
-    <meta name="author" content="sire#0666">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/style.css?v=5">
-    <link rel="shortcut icon" href="https://i.imgur.com/BzrdFb8.png"/>
-    <meta property="og:image" content="/images/meta.png" />
-    <meta property="twitter:image" content="/images/meta.png" />
-    <link rel="apple-touch-icon" href="/images/meta.png" />
-    <meta property="og:title" content="Home" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="ManaLabs Inc. is the team behind ManaCube, MineVille, Pluteria and MineVast. We also managed The Deep End, The Avenue and The Cube." />
-    <title>ScaleLabs | Home</title>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111062578-5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta name="viewport" content"width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MiteHost | Home</title>
+    <meta name="description"
+        content="The Team behind several massive, successful services."/>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link href="https://rsms.me/inter/inter-ui.css" rel="stylesheet">
 
-  gtag('config', 'UA-111062578-5');
-</script>
-<script
-			  src="https://code.jquery.com/jquery-3.5.1.min.js"
-			  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-			  crossorigin="anonymous"></script>
-<script type="text/javascript">
-function loadStyleSheet(src) {
-	if (document.createStyleSheet){
-		document.createStyleSheet(src);
-	}
-	else {
-		$("head").append("<link rel='stylesheet' href='" + src + "'/>");
-		console.log("appended");
-	}
-};
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 
-$(document).ready(function(){
-	loadStyleSheet("https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css");
-	loadStyleSheet("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,400i,500,600,700,800,900&display=swap");
-});
-</script>
-
-
+    <link rel="stylesheet" href="css/default.css" id="theme-color">
 </head>
-<body class="home">
-  <div id="nav">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container" id="navbar-container">
-            <a class="navbar-brand" href="/">
-                <img src="images/nav-logo.png" alt="">
-                <span class="nav-text">
-                    <strong>Scale</strong>Labs
-                </span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="mdi mdi-menu"></span>
-            </button>
+<body>   
 
+<!-- Navigation / Slider -->
+<section class="smart-scroll">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <a class="navbar-brand heading-black" href="https://asteria.host">
+                Asteria
+            </a>
+            <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
+                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span data-feather="grid"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            About
-                        </a>
-                        <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/stats">Stats</a>
-                            <a class="dropdown-item" href="/timeline">Timeline</a>
-                        </div>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#features">About Us</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/jobs">Jobs</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#pricing">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#faq">Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#blog">Updates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll d-flex flex-row align-items-center text-primary" href="https://scalelabs.net">
+                            <em data-feather="layout" width="18" height="18" class="mr-2"></em>
+                            Panel
+                        </a>
+                    </li>
                 </ul>
             </div>
+        </nav>
+    </div>
+</section>
+
+
+<section class="py-7 py-md-0 bg-hero" id="home">
+    <div class="container">
+        <div class="row vh-md-100">
+            <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
+                <h1 ckass="heading-blackk text-capitalize">A team comprised of 10 individuals</h1>
+                <p class="lead py-3">Servicing popular brands, and serving over 95,000 registered users and counting.</p>
+                <button class="btn btn-primary d-inline-flex flex-row align-items-center" href="#pricing">
+                  Work with Us
+                  <em class="ml-2" data-feather="arrow-right"></em>     
+                </button>
+            </div>
         </div>
-    </nav>
-  </div>    <h1 style="display:none;">Home</h1>
-    <div class="home-content">
-        <div class="container animated fadeIn">
-            <div class="row">
-                <div class="col-5 hero-left">
-                    <div id="slider" class="carousel slide carousel-fade" data-ride="carousel">
-                        <ul class="carousel-indicators">
-                            <li data-target="#slider" data-slide-to="0" class="active"></li>
-                            <li data-target="#slider" data-slide-to="1"></li>
-                            <li data-target="#slider" data-slide-to="2"></li>
-                            <li data-target="#slider" data-slide-to="3"></li>
-                            <li data-target="#slider" data-slide-to="4"></li>
-                            <li data-target="#slider" data-slide-to="5"></li>
-                            <li data-target="#slider" data-slide-to="6"></li>
-                            <li data-target="#slider" data-slide-to="7"></li>
-                            <li data-target="#slider" data-slide-to="8"></li>
-                            <li data-target="#slider" data-slide-to="9"></li>
-                            <li data-target="#slider" data-slide-to="10"></li>
-                            <li data-target="#slider" data-slide-to="11"></li>
-                            <li data-target="#slider" data-slide-to="12"></li>
-                            <li data-target="#slider" data-slide-to="13"></li>
-                            <li data-target="#slider" data-slide-to="14"></li>
-                            <li data-target="#slider" data-slide-to="15"></li>
-                        </ul>
-                        <div class="carousel-inner">
-							<!-- remove l from each image url to get full image !-->
-							<!-- png/jpeg can be used interchangably !-->
-                            <div class="carousel-item active">
-                                <img src="https://i.imgur.com/km2ZQlGl.jpg">
+    </div>
+</section>   
+  
+ 
+<!-- features section -->
+<section class="pt-6 pb-7" id="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+                <h2 class="heading-black">Our Stats</h2>
+                <p class="text-muted lead">Highlights of our past 2 years</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-10 mx-auto">
+                <div class="row feature-boxes">
+                    <div class="col-md-6 box">
+                        <div class="icon-box box-primary">
+                            <div class="icon-box-inner">
+                                <span data-feather="edit-3" width="35" height="35"></span>
                             </div>
-                            <div class="carousel-item">
-                                <img src="https://i.imgur.com/WRXJrUBl.jpg" loading="lazy">
+                        </div>
+                        <h5>Contributions</h5>
+                        <p class="text-muted">Over 250 updates across all services provided in 2019-2021</p>
+                    </div>
+                    <div class="col-md-6 box">
+                        <div class="icon-box box-success">
+                            <div class="icon-box-inner">
+                                <span data-feather="monitor" width="35" height="35"></span>
                             </div>
-                            <div class="carousel-item">
-                                <img src="https://i.imgur.com/3g7i7Ehl.jpg" loading="lazy">
+                        </div>
+                        <h5>Services</h5>.
+                        <p class="text-muted">9 projects, one team. All with over 10,000 users/p>
+                    </div>
+                    <div class="col-md-6 box">
+                        <div class="icon-box box-danger">
+                            <div class="icon-box-inner">
+                                <span data-feather="layout" width="35" height="35"></span>
                             </div>
-                            <div class="carousel-item">
-                                <img src="https://i.imgur.com/oTzFBHIl.jpg" loading="lazy">
+                        </div>
+                        <h5>Charity Efforts</h5>
+                        <p class="text-muted">Over $300 USD donated to select charities</p>
+                    </div>
+                    <div class="col-md-6 box">
+                        <div class="icon-box box-info">
+                            <div class="icon-box-inner">
+                                <span data-feather="globe" width="35" height="35"></span>
                             </div>
-                            <div class="carousel-item">
-                                <img src="https://i.imgur.com/WPvnwDnl.jpg" loading="lazy">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.imgur.com/G4vK5bAl.jpg" loading="lazy">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.imgur.com/3OUaxIXl.jpg" loading="lazy">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.imgur.com/YGMUZkCl.jpg" loading="lazy">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.imgur.com/FbS1RNul.jpg" loading="lazy">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.imgur.com/15jpzxIl.jpg" loading="lazy">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.imgur.com/fNfAMJGl.jpg" loading="lazy">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.imgur.com/VlSvseol.jpg" loading="lazy">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.imgur.com/NkLmuRnl.jpg" loading="lazy">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.imgur.com/wH5TuSrl.jpg" loading="lazy">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.imgur.com/vunzmRjl.jpg" loading="lazy">
-                            </div>
+                        </div>
+                        <h5>Worldwide</h5>
+                        <p class="text-muted">We've serviced over 20 countries</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-6">
+            <div class="col-md-6 mr-auto">
+                <h2>ScaleLabs is more then a Team.</h2>
+                <p class="mb-5">It's a challenge, a very rewarding challenge for all involved.</p>
+                <a href="https://scalelabs.net" class="btn btn-light">
+                    Work with Us
+                </a>
+            </div>
+            <div class="col-md-5">
+                <div class="slick-about">
+                    <img src="img/AOU.jpg" class="img-fluid rounded d-block mx-auto" alt="p1"/>
+                    <img src="img/esports.jpg" class="img-fluid rounded d-block mx-auto" alt="p2"/>
+                    <img src="img/server.jpg" class="img-fluid rounded d-block mx-auto" alt="p3"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-
-
+<!--pricing section-->
+<section class="py-7 bg-dark section-angle top-right bottom-right" id="pricing">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+                <h2 class="text-white heading-black">Job Openings</h2>
+                <p class="text-light lead">Current active position listings</p>
+            </div>
+        </div>
+        <!--pricing tables-->
+        <div class="row pt-5 pricing-table">
+            <div class="col-12 mx-auto">
+                <div class="card-deck pricing-table">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title pt-3">Marketing Manager</h3>
+                            <h2 class="card-title text-primary mb-0 pt-4">Paid</h2>
+                            <div class="text-muted font-weight-medium mt-2">Part Time</div>
+                            <ul class="list-unstyled pricing-list">
+                                <li>Resume & Portfolio ready to present</li>
+                                <li>Ability to market precisely to a wide audience</li>
+                                <li>Reliable and dependable</li>
+                                <li>Ready for any challenge thrown at you.</li>
+                            </ul>
+                            <a href="https://discord.gg/UXuf3YJ4Zz" class="btn btn-primary">
+                                Click to apply
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title pt-3">Java Developer</h3>
+                            <h2 class="card-title text-info mb-0 pt-4">Partially Paid</h2>
+                            <div class="text-muted font-weight-medium mt-2">Part time</div>
+                            <ul class="list-unstyled pricing-list">
+                                <li>Resume & Portfolio ready to present</li>
+                                <li>1+ years in Java Development</li>
+                                <li>Ability to work efficiently and fast</li>
+                                <li>Ability to work with a great team</li>
+                            </ul>
+                            <a href="https://discord.gg/UXuf3YJ4Zz" class="btn btn-info">
+                                Click to apply
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title pt-3">Designer</h3>
+                            <h2 class="card-title text-primary mb-0 pt-4">Paid</h2>
+                            <div class="text-muted font-weight-medium mt-2">Commission Job</div>
+                            <ul class="list-unstyled pricing-list">
+                                <li>Resume & Portfolio ready to present</li>
+                                <li>Ability to work within a time period</li>
+                                <li>Able to use basic elements; Photoshop, etc</li>
+                                <li>Ability to make MC related art styles</li>
+                            </ul>
+                            <a href="https://discord.gg/UXuf3YJ4Zz" class="btn btn-primary">
+                                Click to apply
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="col hero-right">
-                    <h2>
-                        Creating new <span>experiences</span><br>
-                        and <span>growing</span> communities
-                    </h2>
-                    <p>
-                    We are the team behind some of Minecraft's most popular networks</p>
-                </div>
+            </div>
+        </div>
+        <div class="row mt-6">
+            <div class="col-md-4 mr-auto">
+                <h3>What benefits to you receive</h3>
+                <p class="lead">
+                    We love our employees, we love to give back.
+                </p>
+            </div>
+            <div class="col-md-7 offset-md-1">
+                <ul class="features-list">
+                    <li>All holidays off.</li>
+                    <li>Several weeks vacation per year</li>
+                    <li>Versatile experience and challenges</li>
+                    <li>Ability to work with a growing and successful team</li>
+                    <li>Paid positions</li>
+                    <li>Remote, flexible and versatile positions</li>
+                    <li>A friendly, reliable team</li>
+                    <li>Ability to service over 95,000 Registered Users</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-8 col-12 divider top-divider mx-auto pt-5 text-center">
+                <h3>Are you interested?</h3>
+                <p class="mb-4">Come work with us today!</p>
+                <button class="btn btn-primary" href="https://discord.gg/UXuf3YJ4Zz">
+                    Contact us
+                </button>
             </div>
         </div>
     </div>
-    <div class="stats-block">
-        <div class="container animated fadeIn delay--one">
-            <div class="row">
-                <div class="col text-center">
-                    <h3><span class="counter" data-count-from="1" data-count-to="50000">50000</span>+<p>Registered Users</p></h3>
+</section>
+
+<!--faq section-->
+<section class="py-7" id="faq">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+                <h2>Frequently asked questions</h2>
+                <p class="text-muted lead">Answers to most common questions.</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-10 mx-auto">
+                <div class="row">
+                    <div class="col-md-6 mb-5">
+                        <h6>What does ScaleLabs do?</h6>
+                        <p class="text-muted">We work as a independent company on vast minecraft or external projects.</p>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <h6>How do I apply for a job?</h6>
+                        <p class="text-muted">Click the "Contact Us" button above. Send your resume & portfolio and boom!</p>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <h6>How do paid positions work?</h6>
+                        <p class="text-muted">You are paid through PayPal converted to your currency (USD -> Example).</p>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <h6>How is the schedule environment?</h6>
+                        <p class="text-muted">Schedules are discussed with management then approved by you before becoming official.</p>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <h6>What is a "NDA Contract"</h6>
+                        <p class="text-muted">A non-disclouse agreemnent is a contract that is usually within 1 month to 1 year and signed to protect a company.</p>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <h6>How can I contact you?</h6>
+                        <p class="text-muted">Click the "Contact Us" button above to contact us!</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-
-    <div class="help-block">
-        <div class="container">
-            <p>Learn about the history of ScaleLabs</p>
-            <h4><a href="/timeline">Timeline</a></h4>
-        </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script>
-        $('.carousel').carousel();
-        $('.counter').each(function() {
-        var $this = $(this),
-            countTo = $this.attr('data-count-to');
-            countFrom = $this.attr('data-count-from');
-        
-        $({ countNum: $this.text()}).animate({
-            countNum: countTo
-        },
-
-        {
-
-            duration: 1800,
-            easing:'linear',
-            step: function(now) {
-            $this.text(Math.ceil(now).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"));
-            }
-
-        });  
-
-        });
-    </script>
-    <div id="foot">
-    <div class="quick-links">
-        <div class="container">
-            <div class="row">
-                <div class="col muted">
-                    Quick Links
-                </div>
-                <div class="links text-right">
-                    <ul class="nav">
-                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/jobs">Jobs</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/stats">Stats</a></li>
-                    </ul>
-                </div>
+        <div class="row mt-4">
+            <div class="col-md-6 mx-auto text-center">
+                <h5 class="mb-4">Support Desk</h5>
+                <a href="https://discord.gg/PdU7R3X3vx" class="btn btn-primary">Guest Support Area</a>
             </div>
         </div>
     </div>
-    <div class="below-links">
-        <div class="container">
-            <div class="row">
-                <div class="copyright col">
-                    <div class="foot-img"><img src="images/manalabs.png"></div>
-                    Copyright 2021 <strong>ScaleLabs</strong>
-                    <small>All rights reserved.</small>
-                </div>
-                    </ul>
-                </div>
+</section>
+  
+<!--footer-->
+<footer class="py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 mr-auto">
+                <h5>ScaleLabs</h5>
+                <p class="text-muted">A versatile, growing, successful team of individuals working daily for excellence..</p>
+                <ul class="list-inline social social-sm">
+                    <li class="list-inline-item">
+                        <a href="https://discord.gg/PdU7R3X3vx"><i class="fa fa-globe"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <h5>Official</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Premium Service Terms</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <h5>Help</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://discord.gg/UXuf3YJ4Zz">Support</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 text-muted text-center small-xl">
+                &copy; 2021 ScaleLabs - All Rights Reserved.
             </div>
         </div>
     </div>
-</div>  </body>
+</footer>
+
+<!--scroll to top-->
+<div class="scroll-top">
+    <i class="fa fa-angle-up" aria-hidden="true"></i>
+</div>
+
+<!-- theme switcher (FOR DEMO ONLY - REMOVE FROM PRODUCTION)-->
+<div class="switcher-wrap">
+    <div class="switcher-trigger">
+        <span class="fa fa-gear"></span>
+    </div>
+    <div class="color-switcher">
+        <h6>Color Switcher</h6>
+        <ul class="mt-3 clearfix">
+            <li class="bg-teal active" data-color="default" title="Default Teal"></li>
+            <li class="bg-purple" data-color="purple" title="Purple"></li>
+            <li class="bg-blue" data-color="blue" title="Blue"></li>
+            <li class="bg-red" data-color="red" title="Red"></li>
+            <li class="bg-green" data-color="green" title="Green"></li>
+            <li class="bg-indigo" data-color="indigo" title="Indigo"></li>
+            <li class="bg-orange" data-color="orange" title="Orange"></li>
+            <li class="bg-cyan" data-color="cyan" title="Cyan"></li>
+            <li class="bg-yellow" data-color="yellow" title="Yellow"></li>
+            <li class="bg-pink" data-color="pink" title="Pink"></li>
+        </ul>
+    </div>
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
 </html>
