@@ -1,2 +1,3 @@
-# ScaleLabs
-ScaleLabs official website.
+# NavaLabs
+
+NavaLabs (formerly ScaleLabs) website.
